@@ -1,0 +1,75 @@
+@import "../variables.scss";
+
+.numbers {
+  background: $background-clair;
+  padding: 4rem 6rem 8rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin: 2rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: $primary-font;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 2rem;
+  }
+
+  .content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+
+    .image-right {
+      width: 30rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  .card-buttom {
+    display: flex;
+    width: 85rem;
+    height: 6rem;
+    background: white;
+    border: 1px dashed #dbdbdb;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $primary-font;
+    .label {
+      color: #35bbe3;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      letter-spacing: 1.5px;
+    }
+    p {
+      font-size: 1.15rem;
+      font-weight: 200;
+      line-height: 2rem;
+      margin: 0;
+    }
+  }
+}

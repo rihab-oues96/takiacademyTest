@@ -1,0 +1,59 @@
+@import "../variables.scss";
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  .title {
+    margin: 2rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: $primary-font;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+    font-family: $primary-font;
+    font-weight: 200;
+
+    .desc-deep {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      color: $primary-color;
+    }
+  }
+
+  .intro-text {
+    width: 75rem;
+    text-align: center;
+    padding: 3rem;
+    span {
+      font-family: $primary-font;
+      font-size: 1.3rem;
+      font-weight: 200;
+      line-height: 2rem;
+    }
+  }
+
+  .btn {
+    width: 12rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: #35bbe3;
+    color: white;
+  }
+}
